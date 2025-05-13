@@ -1,31 +1,13 @@
-# SQL Join Queries – Airbnb Clone Backend
+# Advanced Queries - Airbnb Clone
 
-This document explains the SQL join queries used to retrieve relational data from the Airbnb Clone database.
+## Overview
 
-These queries help analyze how users, bookings, properties, and reviews are connected in the system.
+This document outlines advanced SQL queries for the Airbnb Clone backend, including joins and subqueries. These queries are designed to retrieve relational data from the database efficiently.
 
----
+## Purpose
 
-## 🎯 Overview
-
-Joins are used to combine related data from multiple tables using shared keys.
-
-The following queries demonstrate different types of joins:
-
-- `INNER JOIN`
-- `LEFT JOIN`
-- `FULL OUTER JOIN`
-
----
-
-## 📋 Purpose
-
-Each query serves a specific purpose:
-
-| Query Type       | Purpose |
-|------------------|---------|
-| INNER JOIN       | Retrieve bookings that have matching users |
-| LEFT JOIN        | List all properties including those without reviews |
-| FULL OUTER JOIN  | Show all users and bookings, even if one doesn't match the other |
-
-These queries are useful for reporting, analytics, and understanding user behavior and property usage.
+- **INNER JOIN**: Retrieves bookings with matching users.
+- **LEFT JOIN**: Lists all properties, including those without reviews.
+- **FULL OUTER JOIN**: Shows all users and bookings, even if one doesn't match the other.
+- **Non-Correlated Subquery**: Finds properties with an average rating greater than 4.0.
+- **Correlated Subquery**: Finds users who have made more than 3 bookings.
